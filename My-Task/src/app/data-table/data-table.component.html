@@ -1,0 +1,117 @@
+<p>data-table works!</p>
+<div class="container text-center" style="margin-top:30px">
+        <h1> Angular Data Table </h1>
+
+
+    
+    <div class="row g-3 align-items-center"  style="margin:30px">
+        <div class="col-auto">
+          <label for="selectRole" class="col-form-label-lg" style="font-weight: bolder;">Add Role</label>
+        </div>
+        <div class="col-auto">
+            <select class="form-select form-select-lg"  #ref (change)="getSelectedValue(ref.value)">
+                <option value="HR">HR</option>
+                <option value="Administrative">Administrative</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Sales">Sales</option>
+            </select>
+        </div>
+      </div>
+
+
+    <!-- <p>You have selected {{selectedValue}}</p> -->
+
+
+    <table class="table table-hover">
+        <thead class="table-secondary">
+            <tr>
+                <td class="name">Name</td>
+                <td class="Address">Address</td>
+                <td class="Mobile">Mobile</td>
+                <td class="Roles">Role</td>
+                <!-- <td class="Option">Option</td> -->
+            </tr>
+        </thead>
+        <tbody class="table-striped">
+            <!-- <tr>
+                <td class="name">Sahaj</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9409036035</td>
+                <td class="Roles">Administrative</td>
+            </tr>
+            <tr>
+                <td class="name">Deep</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9806736035</td>
+                <td class="Roles">Sales</td>
+            </tr>
+            <tr>
+                <td class="name">Yash</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9409036035</td>
+                <td class="Roles">Administrative</td>
+            </tr>
+            <tr>
+                <td class="name">Akib</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9409036035</td>
+                <td class="Roles">Marketing</td>
+            </tr>
+            <tr>
+                <td class="name">Hemil</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">8235136035</td>
+                <td class="Roles">Marketing</td>
+            </tr>
+            <tr>
+                <td class="name">Khush</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">8767836035</td>
+                <td class="Roles">Administrative</td>
+            </tr>
+            <tr>
+                <td class="name">Rahul</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9876736035</td>
+                <td class="Roles">Marketing</td>
+            </tr>
+            <tr>
+                <td class="name">Harsh</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9445665435</td>
+                <td class="Roles">Marketing</td>
+            </tr>
+
+            <tr>
+                <td class="name">Bhavesh</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9409023432</td>
+                <td class="Roles">Administrative</td>
+            </tr>
+            <tr>
+                <td class="name">Rohit</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9109036035</td>
+                <td class="Roles">Administrative</td>
+            </tr>
+            <tr>
+                <td class="name">Manoj</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9409023432</td>
+                <td class="Roles">HR</td>
+            </tr>
+            <tr>
+                <td class="name">Ramesh</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9434536035</td>
+                <td class="Roles">HR</td>
+            </tr>
+            <tr>
+                <td class="name">Bharat</td>
+                <td class="Address">Palanpur</td>
+                <td class="Mobile">9445636035</td>
+                <td class="Roles">Sales</td>
+            </tr> -->
+        </tbody>
+    </table>
+</div>
